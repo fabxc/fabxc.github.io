@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Fabian Reinartz</title>
-    <link>https://fabxc.github.io/posts/</link>
-    <description>Recent content in Posts on Fabian Reinartz</description>
+    <title>Tsdbs on Fabian Reinartz</title>
+    <link>https://fabxc.org/tsdb/</link>
+    <description>Recent content in Tsdbs on Fabian Reinartz</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 20 Apr 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://fabxc.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://fabxc.org/tsdb/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Writing a Time Series Database from Scratch</title>
-      <link>https://fabxc.github.io/posts/tsdb/</link>
+      <link>https://fabxc.org/tsdb/</link>
       <pubDate>Thu, 20 Apr 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://fabxc.github.io/posts/tsdb/</guid>
+      <guid>https://fabxc.org/tsdb/</guid>
       <description>I work on monitoring. In particular on Prometheus, a monitoring system that includes a custom time series database, and its integration with Kubernetes.
 In many ways Kubernetes represents all the things Prometheus was designed for. It makes continuous deployments, auto scaling, and other features of highly dynamic environments easily accessible. The query language and operational model, among many other conceptual decisions make Prometheus particularly well-suited for such environments. Yet, if monitored workloads become significantly more dynamic, this also puts new strains on monitoring system itself.</description>
     </item>

@@ -3,29 +3,29 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://fabxc.org/posts/tsdb/</loc>
+    <loc>https://fabxc.org/tsdb/</loc>
     <lastmod>2017-04-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://fabxc.org/categories/</loc>
+    <loc>https://fabxc.org/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://fabxc.org/</loc>
-    <lastmod>2017-04-20T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://fabxc.org/posts/</loc>
+    <loc>https://fabxc.org/</loc>
     <lastmod>2017-04-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://fabxc.org/tags/</loc>
+    <loc>https://fabxc.org/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://fabxc.org/tsdb/</loc>
+    <lastmod>2017-04-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
