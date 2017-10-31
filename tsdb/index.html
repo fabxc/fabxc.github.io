@@ -3,39 +3,48 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Writing a Time Series Database from Scratch | Fabian Reinartz</title>
-<link rel="stylesheet" href="https://fabxc.github.io/css/style.css">
+<link rel="stylesheet" href="https://fabxc.org/css/style.css">
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/default.min.css">
 
 
 <section class="section">
-  <div class="container">
-    <nav class="nav">
-      <div class="nav-left">
-        <a class="nav-item" href="https://fabxc.github.io"><h1 class="title is-4">Fabian Reinartz</h1></a>
-      </div>
-      <div class="nav-right">
-        <nav class="nav-item level is-mobile">
-          
-          <a class="level-item" href="https://github.com/fabxc">
-            <span class="icon">
-              <i class="fa fa-github"></i>
-            </span>
-          </a>
-          
-          <a class="level-item" href="https://twitter.com/fabxc">
-            <span class="icon">
-              <i class="fa fa-twitter"></i>
-            </span>
-          </a>
-          
-        </nav>
-      </div>
-    </nav>
-  </div>
-</section>
-
+        <div class="container">
+          <nav class="nav">
+            <div class="nav-left">
+              <a class="nav-item" href="https://fabxc.org">
+                <span style="background-image: url('/static/fabxc-56px.jpg'); display: inline-block; width: 56px; height: 56px; margin-right: 16px; border-radius: 50%"></span>
+                <h1 class="title is-4">Fabian Reinartz</h1>
+              </a>
+            </div>
+            <div class="nav-right">
+              <nav class="nav-item level is-mobile">
+                
+                <a class="level-item" href="https://github.com/fabxc">
+                  <span class="icon">
+                    <i class="fa fa-github"></i>
+                  </span>
+                </a>
+                
+                <a class="level-item" href="https://twitter.com/fabxc">
+                  <span class="icon">
+                    <i class="fa fa-twitter"></i>
+                  </span>
+                </a>
+                
+                <a class="level-item" href="mailto:fab.reinartz@gmail.com">
+                  <span class="icon">
+                    <i class="fa fa-envelope"></i>
+                  </span>
+                </a>
+                
+              </nav>
+            </div>
+          </nav>
+        </div>
+      </section>
+      
 <section class="section">
   <div class="container">
     <h2 class="subtitle is-6">April 20, 2017</h2>
@@ -445,11 +454,11 @@ Both Prometheus 1.5.2 servers start suffering from significant drops in ingestio
 
 <p>But what&rsquo;s the <em>absolute maximum</em> number of samples per second you could ingest now?</p>
 
-<p>I don&rsquo;t know — while it's a fairly easy metric to optimize for, it's not particularly meaningful beyond a solid baseline performance.</p>
+<p>I don&rsquo;t know — and deliberately don&rsquo;t care.</p>
 
 <p>There are a lot of factors that shape the data flowing into Prometheus and there is no single number capable of capturing quality. Maximum ingestion rate has historically been a metric leading to skewed benchmarks and neglect of more important aspects such as query performance and resilience to series churn. The rough assumption that resource usage increases linearly was confirmed by some basic testing. It is easy to extrapolate what could be possible.</p>
 
-<p>Our benchmarking setup simulates a highly dynamic environment stressing Prometheus more than most real-world setups today. The results show we went way above our initial design goal, while running on fairly standard cloud servers. Ultimately, success will be determined by user feedback rather than benchmarking numbers.</p>
+<p>Our benchmarking setup simulates a highly dynamic environment stressing Prometheus more than most real-world setups today. The results show we went way above our initial design goal, while running on non-optimal cloud servers. Ultimately, success will be determined by user feedback rather than benchmarking numbers.</p>
 
 <blockquote>
 <p><strong>Note:</strong> <em>At time of writing this, Prometheus 1.6 is in development, which will allow configuring the maximum memory usage more reliably and may notably reduce overall consumption in favor of slightly increased CPU utilization. I did not repeat the tests against this as the overall results still hold, especially when facing high series churn.</em></p>
@@ -457,7 +466,7 @@ Both Prometheus 1.5.2 servers start suffering from significant drops in ingestio
 
 <h2 id="conclusion">Conclusion</h2>
 
-<p>Prometheus sets out to handle high cardinality of series and throughput of individual samples. It remains a challenging task, but the new storage seems to position us well for the future.</p>
+<p>Prometheus sets out to handle high cardinality of series and throughput of individual samples. It remains a challenging task, but the new storage seems to position us well for the hyper-scale, hyper-convergent, GIFEE infrastructure of the futu&hellip; well, it seems to work pretty well.</p>
 
 <p>A <a href="https://prometheus.io/blog/2017/04/10/promehteus-20-sneak-peak/">first alpha release of Prometheus 2.0</a> with the new V3 storage is available for testing. Expect crashes, deadlocks, and other bugs at this early stage.</p>
 
@@ -486,5 +495,14 @@ Both Prometheus 1.5.2 servers start suffering from significant drops in ingestio
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script>
 
 <script>hljs.initHighlightingOnLoad();</script>
+
+
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-97080734-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='//www.google-analytics.com/analytics.js'></script>
+
 
 
